@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 export default function Home() {
   return (
     <main className="bg-white">
-      
       <section id="home" className="h-screen w-11/12 m-auto mb-8">
         <div>
           <Team />

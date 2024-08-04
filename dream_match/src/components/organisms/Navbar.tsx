@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 const Navbar: React.FC = () => (
   <header id="nav-container" className='w-11/12 m-auto text-white p-6'>
     <nav id='navbar' className='h-100'>

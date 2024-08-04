@@ -1,14 +1,8 @@
 "use client"
 
-import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react';
 import Player from '../molecules/Player';
 import FootballField from '../molecules/FootballField';
-
-interface PlayersData {
-  teamName: string
-  selectedPlayers: Players[]
-}
 
 interface Players {
   player_id: string
@@ -60,7 +54,6 @@ const Team: React.FC<any> = ({ refreshPage }) => {
       const dataParsed = JSON.parse(teamOne)
       setPlayersTeamOne(dataParsed.selectedPlayers)
       setPlayersTeamOneName(dataParsed.teamName)
-      // setPlayers(dataParsed)
     }
     
     const teamTwo = localStorage.getItem("team-two")
@@ -68,7 +61,6 @@ const Team: React.FC<any> = ({ refreshPage }) => {
       const dataParsed = JSON.parse(teamTwo)
       setPlayersTeamTwo(dataParsed.selectedPlayers)
       setPlayersTeamTwoName(dataParsed.teamName)
-      // setPlayers(prevState => [...prevState, dataParsed])
     }
   }, [])
 

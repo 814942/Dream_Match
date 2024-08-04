@@ -24,7 +24,6 @@ const CreateTeam: React.FC = () => {
   const [players, setPlayers] = useState<Players[]>([])
   const [selectedPlayers, setSelectedPlayers] = useState<Players[]>([])
   const [teamName, setTeamName] = useState<string>("")
-  const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(true)
 
   const fetchData  = async () => {
     const dataTeams = await getData()
@@ -102,7 +101,6 @@ const CreateTeam: React.FC = () => {
                 <div
                   key={player.player_id}
                   className="w-[300px] border border-green-light m-2 mb-2 p-2 rounded-lg flex items-center justify-start gap-2 m-2 text-green-light hover:bg-gray hover:text-white hover:cursor-pointer"
-                  // onClick={() => setSelectedPlayers(prevState => prevState.player_id !== player.player_id)}
                 >
                   <Image
                     src={player.player_image || "/notFound.png"}
