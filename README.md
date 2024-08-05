@@ -37,9 +37,10 @@ En **Alquila tu Cancha** deseamos crear una web app `[responsive desktop y mobil
 - Git (Obligatorio)
 - y todas las otras cosas que creas conveniente!
 
-## Criterios de corrección
+### Indicaciones
+* Para levantar el proyecto situate en el root, carpeta `/dream_match`.
+* Instala las dependencias con tu manejador de paquetes: `npm i` o `yarn`.
+* Corre el proyecto usando tu manejador mas dev: `npm run dev` o `yarn dev`.
 
-¡Ahora sí manos a la obra! esperamos que realices la entrega en una semana desde el momento del envío de la consigna. Para realizar la entrega deseamos que nos envíes un link del repo del proyecto.
-Valoraremos que todas las funcionalidades estén implementadas, que te tomes el tiempo para testear lo realizado antes de enviarnos el resultado, que seas prolij@ al escribir el código fuente, que escribas un Readme.md donde se indique cómo levantar el proyecto y todas las otras especificaciones que creas conveniente. Pero pero pero... por sobre todas las cosas, valoraremos que aportes tu creatividad ;)
-
-Muchos éxitos!
+__IMPORTANTE:__
+Vas a necesitar crear un archivo de variables de entorno(.env) en el root del proyecto con la siguiente clave: `NEXT_PUBLIC_API_KEY` y guardar en ella la key de la API. Si no tienes una vas a tener que crearla.
